@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./styles/global.css";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
+import "../public/sass/main.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

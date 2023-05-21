@@ -1,0 +1,76 @@
+header {
+  padding: 5rem 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #141517;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+    ul {
+      display: flex;
+      gap: 1.5rem;
+
+      li {
+        a {
+          color: $brand-light-orange;
+          padding: 2rem;
+          transition: all 0.25s ease-in;
+
+          &:hover {
+            color: #f06f40;
+            background-color: rgba(#0f1011, 0.75);
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
+
+    .accountBtns {
+      background-color: $brand-light-orange;
+      padding: 1rem 1.75rem;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      a {
+        color: $brand-light-orange;
+      }
+
+      .loginBtn {
+        color: $brand-primary-orange;
+        padding: 0 1rem;
+        transition: all 0.25s ease-in;
+
+        &:hover {
+          color: #141517;
+        }
+      }
+    }
+  }
+
+  .menu-mobile {
+    display: none;
+    width: 100%;
+    max-width: 3rem;
+  }
+
+  @include responsive(1035px) {
+    nav {
+      display: none;
+    }
+    .menu-mobile {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}

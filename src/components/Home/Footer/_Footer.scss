@@ -1,0 +1,82 @@
+footer {
+  background-color: #141517;
+  padding: 9rem 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p,
+  strong,
+  a {
+    color: $brand-light-orange;
+  }
+
+  .f-top {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+
+    .budgetbuddy-title,
+    .budgetbuddy-title strong {
+      font-size: 3rem;
+    }
+
+    .budgetbuddy-title,
+    .budgetbuddy-slogan {
+      font-weight: 300;
+    }
+
+    .second-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+
+      .contact-us {
+        font-size: 2rem;
+      }
+
+      .email-address,
+      .phone-number {
+        font-weight: 300;
+      }
+    }
+
+    .third-column {
+      display: flex;
+      gap: 3rem;
+
+      a {
+        transition: all 0.25s ease-in;
+        padding: 1rem 1rem;
+      }
+
+      a:hover {
+        color: $brand-primary-orange;
+      }
+    }
+  }
+
+  .f-mid {
+    hr {
+      margin-top: 10rem;
+      margin-bottom: 4rem;
+      background-color: $brand-light-orange;
+      height: 1px;
+    }
+  }
+
+  .f-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.5rem;
+    font-weight: 300;
+  }
+
+  @include responsive(870px) {
+    .f-top {
+      @include flex(column, space-between, center);
+      gap: 5rem;
+      text-align: center;
+    }
+  }
+}

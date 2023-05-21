@@ -1,0 +1,16 @@
+.mainBtn{
+    padding: 1rem 1.5rem;
+    background-color: $brand-primary-orange;
+    display: inline-block;
+    color: $brand-light-orange;
+    border-radius: 0.4rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    transition: all 0.25s ease-in;
+
+    &:hover {
+        transform: scale(1.07);
+    }
+}

@@ -1,0 +1,26 @@
+.s-dashboard {
+  margin-bottom: 7rem;
+  .container {
+    @include flex(row, space-between, center);
+    gap: 7rem;
+  }
+  .text {
+    h2 {
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 125%;
+      color: $brand-primary-orange;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include responsive(1000px) {
+    .container {
+      @include flex(column, space-between, center);
+      text-align: center;
+    }
+  }
+}

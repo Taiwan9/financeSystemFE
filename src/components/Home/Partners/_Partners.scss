@@ -1,0 +1,30 @@
+.s-partners {
+  padding: 6rem 0;
+  img {
+    // width: 100%;
+    height: 100%;
+  }
+  .container {
+    @include flex(column, center, center);
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: $brand-primary-orange;
+    padding: 6rem 0;
+  }
+  .logos {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    gap: 6.3rem;
+  }
+
+  // @include responsive(790px) {
+  //   .logos {
+  //     @include flex(column, space-between, center);
+  //   }
+  // }
+}

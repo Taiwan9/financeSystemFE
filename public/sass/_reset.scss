@@ -8,23 +8,27 @@
   border: none;
   text-decoration: none;
   list-style: none;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 150%;
-  font-family: "Inter", sans-serif;
+  color: black;
 }
 
 html {
   font-size: 62.5%;
-}
-
-/* Remova o #Root caso não use React */
-
-html,
-body,#root {
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
 }
