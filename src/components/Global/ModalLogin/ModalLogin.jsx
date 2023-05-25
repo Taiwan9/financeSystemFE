@@ -1,10 +1,9 @@
-import React from "react";
 import MainBtn from "../MainBtn/MainBtn";
 
 // ICONS
-import GoogleIcon from "../../../../public/assets/img/google-icon.svg";
-import FacebookIcon from "../../../../public/assets/img/facebook-icon.svg";
-import CloseIcon from "../../../../public/assets/img/close-i.svg";
+import GoogleIcon from "/assets/img/google-icon.svg";
+import FacebookIcon from "/assets/img/facebook-icon.svg";
+import CloseIcon from "/assets/img/close-i.svg";
 
 const ModalLogin = ({ onClick }) => {
   return (

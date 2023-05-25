@@ -1,11 +1,10 @@
-import React from "react";
 import MainBtn from "../../Global/MainBtn/MainBtn";
 
 function Hero() {
   return (
     <section className="s-hero">
       <div className="container">
-        <img src="../../../public/assets/img/piggy.png" alt="piggy" />
+        <img src="/assets/img/piggy.png" alt="piggy" />
         <div className="text">
           <h1>Gerencie suas finanças de uma forma fácil e ágil!</h1>
           <p>
