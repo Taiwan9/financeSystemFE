@@ -1,4 +1,5 @@
-import React from "react";
+import { Link } from "react-router-dom";
+
 import MainBtn from "../../Global/MainBtn/MainBtn";
 import MenuMobile from "../../../../public/assets/img/menu-mobile.svg";
 
@@ -6,7 +7,9 @@ function Header({ loginOnClick }) {
   return (
     <header>
       <div className="container">
-        <img src="../../../public/assets/img/BudgetBuddy.svg" alt="" />
+        <Link to="/">
+          <img src="../../../public/assets/img/BudgetBuddy.svg" alt="" />
+        </Link>
         <nav>
           <ul>
             <li>

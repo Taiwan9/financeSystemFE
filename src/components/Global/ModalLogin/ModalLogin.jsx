@@ -1,5 +1,5 @@
 import React from "react";
-import MainBtn from "../../Global/MainBtn/MainBtn";
+import MainBtn from "../MainBtn/MainBtn";
 
 // ICONS
 import GoogleIcon from "../../../../public/assets/img/google-icon.svg";

@@ -7,7 +7,7 @@
 @import "../../src/components/Global/MainBtn/MainBtn.scss";
 
 // Header
-@import "../../src/components/Home/Header/Header.scss";
+@import "../../src/components/layout/Header/Header";
 
 // Hero
 @import "../../src/components/Home/Hero/Hero.scss";
@@ -19,7 +19,7 @@
 @import "../../src/components/Home/Dashboard/Dashboard.scss";
 
 // Footer
-@import "../../src/components/Home/Footer/Footer.scss";
+@import "../../src/components/layout/Footer/Footer";
 
 // MODAIS
-@import "../../src/components/Home/ModalLogin/ModalLogin.scss";
+@import "../../src/components/Global/ModalLogin/ModalLogin.scss";
