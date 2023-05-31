@@ -1,8 +1,8 @@
-function MainBtn(props) {
+function MainBtn({text, actionEvent}) {
   return (
-    <a href="#" className="mainBtn">
-      {props.text}
-    </a>
+    <button className="mainBtn" onClick={actionEvent}>
+      {text}
+    </button>
   );
 }
 

@@ -1,17 +1,16 @@
 {
-    "data": {
-        "pessoaFisica": [
-            {
-                "id": 0,
-                "nome": "joao",
-                "email": "joao@gmail.com",
-                "senha": "12345",
-                "extrato": [
-                    {
-                        
-                    }
-                ]
-            }
-        ] 
+  "userCPF": [
+    {
+      "token": "54515465413",
+      "nome": "junior",
+      "email": "junior@gmail.com",
+      "password": "123"
+    },
+    {
+      "token": "55555555",
+      "nome": "teste",
+      "email": "teste@gmail.com",
+      "password": "12345"
     }
+  ]
 }

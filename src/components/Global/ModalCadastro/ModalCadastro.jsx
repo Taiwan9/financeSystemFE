@@ -9,15 +9,16 @@ import GoogleIcon from "/assets/img/google-icon.svg";
 import FacebookIcon from "/assets/img/facebook-icon.svg";
 import CloseIcon from "/assets/img/close-i.svg";
 
-const ModalLogin = ({ onClick }) => {
+const ModalCadastro = ({ onClick }) => {
+  const [nome, setNome] = useState()
   const [email, setEmail] = useState()
   const [senha, setSenha] = useState()
 
-  const {signIn} = useAuth()
+  const {signUp} = useAuth()
 
   const submit = (e) => {
     e.preventDefault()
-    signIn(email, senha)
+    signUp(nome, email, senha)
   }
 
   return (
@@ -35,7 +36,17 @@ const ModalLogin = ({ onClick }) => {
         <div className="form-container">
           <form className="form-area" onSubmit={submit}>
             <h4>Bem-vindo de Volta!</h4>
-            <label htmlFor="name">E-mail:</label>
+
+            <label htmlFor="nome">Nome: </label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="meu nome"
+              onChange={(e) => setNome(e.target.value)}
+            />
+
+            <label htmlFor="email">E-mail:</label>
             <input
               type="email"
               name="email"
@@ -52,7 +63,7 @@ const ModalLogin = ({ onClick }) => {
               placeholder="Sua senha"
               onChange={(e) => setSenha(e.target.value)}
             />
-            <MainBtn text="Login"/>
+            <MainBtn text="Cadastrar"/>
           </form>
 
           <span className="separator">ou</span>
@@ -81,4 +92,4 @@ const ModalLogin = ({ onClick }) => {
   );
 };
 
-export default ModalLogin;
+export default ModalCadastro;
