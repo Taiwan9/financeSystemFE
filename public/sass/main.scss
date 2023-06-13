@@ -23,5 +23,7 @@
 
 // MODAIS
 @import "../../src/components/Global/ModalLogin/ModalLogin.scss";
+@import "../../src/components/Global/ModalCadastro/ModalCadastro.scss";
 
-@import '../../src/components//Global/ModalCadastro/ModalCadastro.scss'
+// DASHBOARD
+@import "../../public/sass/dashboard";
