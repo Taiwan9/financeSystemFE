@@ -44,15 +44,15 @@ function pessoaFisica() {
             </li>
             <li>
               <img src={ActivitiesIcon} alt="Activities Icon" />
-              Dashboard
+              Activities
             </li>
             <li>
               <img src={ScheduleIcon} alt="Schedule Icon" />
-              Dashboard
+              Schedule
             </li>
             <li>
               <img src={SettingsIcon} alt="Settings Icon" />
-              Dashboard
+              Settings
             </li>
           </ul>
         </nav>
