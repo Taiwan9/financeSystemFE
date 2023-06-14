@@ -124,5 +124,59 @@
         }
       }
     }
+
+    .expences {
+      padding: 2.5rem 0;
+      h2 {
+        font-size: 3.5rem;
+        color: #ffffff;
+        font-weight: 600;
+      }
+      ul {
+        @include flex(row, space-between, center);
+        margin: 2.5rem 0;
+        li {
+          @include flex(column, center, center);
+          width: 100%;
+          max-width: 27rem;
+          height: 17rem;
+          background-color: $brand-primary-orange;
+          border-radius: 1.5rem;
+          h4 {
+            color: #fff;
+            font-weight: 400;
+          }
+          del {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #fff;
+          }
+        }
+      }
+      .banner {
+        border-radius: 1.5rem;
+        width: 100%;
+        max-width: 27rem;
+        height: 31rem;
+        overflow: hidden;
+        position: relative;
+        p {
+          width: 100%;
+          max-width: 15rem;
+          position: absolute;
+          top: 2rem;
+          left: 2rem;
+          font-size: 2.7rem;
+          line-height: 115%;
+          b {
+            font-size: 2.7rem;
+            line-height: 105%;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }

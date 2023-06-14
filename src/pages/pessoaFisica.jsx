@@ -8,6 +8,7 @@ import SettingsIcon from "../../public/assets/img/icons/settings-i.svg";
 import LogoutIcon from "../../public/assets/img/icons/log-out-i.svg";
 import SearchIcon from "../../public/assets/img/icons/search-i.svg";
 import NotificationIcon from "../../public/assets/img/icons/notification-i.svg";
+import MiniBanner from "../../public/assets/img/banners/mini-banner.png";
 
 function pessoaFisica() {
   const { logOut, user } = useAuth();
@@ -80,6 +81,30 @@ function pessoaFisica() {
               <div className="notification-quantity">10</div>
               <img src={NotificationIcon} alt="Notification Icon" />
             </div>
+          </div>
+        </div>
+
+        <div className="expences">
+          <h2>Expenses</h2>
+          <ul>
+            <li>
+              <h4>Salário</h4>
+              <del>R$ 2.000,00</del>
+            </li>
+            <li>
+              <h4>Cartão</h4>
+              <del>R$ 2.000,00</del>
+            </li>
+            <li>
+              <h4>Outros gastos</h4>
+              <del>R$ 2.000,00</del>
+            </li>
+          </ul>
+          <div className="banner">
+            <p>
+              Recomend <b>Budget Buddy</b> and get<br></br> bonuses
+            </p>
+            <img src={MiniBanner} alt="Banner" />
           </div>
         </div>
       </div>
